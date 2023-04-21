@@ -50,7 +50,7 @@ def game_play():
             elif letters in secret_word:
                 clue += "?"
             else:
-                clue += "N"
+                clue += "-"
             position += 1
         print(clue)
         while clue == "YYYYY":
@@ -79,7 +79,7 @@ for word in dictionary:
     mod_target.append(word.strip())
 secret_word = random.choice(mod_target)
 secret_word = secret_word.lower()
-print(secret_word)
+#print(secret_word)
 
 attempts = 0
 while attempts < 6 :
